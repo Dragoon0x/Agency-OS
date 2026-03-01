@@ -23,7 +23,7 @@ claude/agents/
 
 Every role. Every department. Every function. All `.md` files.
 
-Agency OS is an open-source agent directory that turns a solo founder or small team into a full-service agency. 22 agents across 7 departments, each with a defined identity, personality, decision-making principles, and hard limits.
+Agency OS is an open-source agent directory that turns a solo founder or small team into a full-service agency. 24 agents across 7 departments, each with a defined identity, personality, decision-making principles, and hard limits.
 
 This isn't a prompt library. It's a company in a repo.
 
@@ -49,6 +49,11 @@ Humans do the work that only humans can do: creative leaps, client relationships
 claude/
   agents/
     shared-soul.md                  # DNA every agent inherits
+    shared-principles.md            # Decision-making rules for all agents
+    shared-guardrails.md            # Hard limits for all agents
+    │
+    templates/
+    │  blank-agent.md               # Start here when creating your own
     │
     strategy/
     │  design-strategist.md         # Scout  → product and design strategy
@@ -73,11 +78,13 @@ claude/
     │  relationship-manager.md      # Keeper → client relationship nurturing
     │
     operations/
-    │  finance-tracker.md           # Donna  → money tracking and profitability
-    │  project-manager.md           # Forge  → timelines and deliverables
-    │  contract-reviewer.md         # Gate   → legal red flags and terms
+    │  finance-tracker.md           # Donna   → money tracking and profitability
+    │  project-manager.md           # Forge   → timelines and deliverables
+    │  contract-reviewer.md         # Gate    → legal red flags and terms
     │  knowledge-keeper.md          # Archive → institutional memory
-    │  meeting-prepper.md           # Brief  → meeting context and action items
+    │  meeting-prepper.md           # Brief   → meeting context and action items
+    │  client-onboarder.md          # Welcome → signed deal to active project
+    │  qa-reviewer.md               # Proof   → quality gate before delivery
     │
     brand-systems/
     │  soul-file-writer.md          # Anima  → agent personality architecture
@@ -86,6 +93,19 @@ claude/
     community/
        community-curator.md         # Town   → community management
        curriculum-builder.md        # Syllabus → education system
+
+workflows/
+  new-project.md                    # Inbound lead → signed project kickoff
+  content-production.md             # Idea → newsletter → social distribution
+  brand-delivery.md                 # Strategy → dual-native brand handoff
+
+examples/
+  quick-start.md                    # Deploy your first 3 agents in 15 minutes
+  adaptations.md                    # Adapt the directory for your agency type
+  industries/
+    dev-agency-shared-soul.md       # Complete shared-soul for a dev shop
+    marketing-agency-shared-soul.md # Complete shared-soul for a marketing agency
+    consulting-firm-shared-soul.md  # Complete shared-soul for a consulting firm
 ```
 
 ---
@@ -146,23 +166,25 @@ STRATEGY              CREATIVE              CONTENT
 │ Lens     │────────▶│ Deck     │         │ Echo     │
 └──────────┘         │ Kit      │         └──────────┘
      │               └──────────┘              │
-     │                                         │
-     ▼                                         ▼
+     │                    │                    │
+     ▼                    ▼                    ▼
 ┌──────────┐         ┌──────────┐         ┌──────────┐
 │ Radar    │────────▶│ Donna    │         │ Town     │
 │ Closer   │────────▶│ Forge    │         │ Syllabus │
 │ Bridge   │         │ Gate     │         └──────────┘
 │ Keeper   │         │ Archive  │
 └──────────┘         │ Brief    │
-BUSINESS              └──────────┘
+BUSINESS             │ Welcome  │
+                     │ Proof    │
+                     └──────────┘
                      OPERATIONS
 ```
 
 **Example flow: New project kickoff**
 
-Radar qualifies the lead → Lens researches the prospect → Closer writes the proposal → Scout sets strategy → Muse defines brand direction → Pixel and Ink execute → Forge tracks timelines → Donna monitors budget → Archive captures lessons.
+Radar qualifies the lead → Lens researches the prospect → Closer writes the proposal → Welcome onboards the client → Scout sets strategy → Muse defines brand direction → Pixel and Ink execute → Proof reviews quality → Forge tracks timelines → Donna monitors budget → Archive captures lessons.
 
-22 agents. One information chain. Zero meetings about meetings.
+24 agents. One information chain. Zero meetings about meetings.
 
 ---
 
@@ -203,7 +225,7 @@ Use the `.md` files as the personality layer in whatever agent framework you're 
 
 ## Rollout Plan
 
-Don't deploy all 22 on day one. You'll overwhelm yourself. Phase it.
+Don't deploy all 24 on day one. You'll overwhelm yourself. Phase it.
 
 ### Phase 1: The Foundation (Week 1-2)
 
@@ -255,6 +277,30 @@ These are the differentiators and growth engines.
 
 ---
 
+## Workflows
+
+Step-by-step multi-agent chains for the most common agency operations. Each workflow shows exactly which agents are involved, what they produce, where humans make decisions, and where things commonly go wrong.
+
+| Workflow | What It Covers |
+| --- | --- |
+| [New Project](workflows/new-project.md) | Inbound lead → qualification → research → proposal → onboarding → kickoff |
+| [Content Production](workflows/content-production.md) | Topic research → newsletter draft → QA → visuals → publish → social distribution |
+| [Brand Delivery](workflows/brand-delivery.md) | Strategy → brand architecture → visual + verbal identity → soul files → structured data → QA → handoff |
+
+---
+
+## Industry Examples
+
+Complete `shared-soul.md` examples for different agency types. Don't copy these. Use them as reference for structure and specificity when writing your own.
+
+| Industry | What It Shows |
+| --- | --- |
+| [Dev Agency](examples/industries/dev-agency-shared-soul.md) | Technical voice, shipping culture, code-specific guardrails |
+| [Marketing Agency](examples/industries/marketing-agency-shared-soul.md) | Metrics-driven voice, budget protection, anti-vanity-metric principles |
+| [Consulting Firm](examples/industries/consulting-firm-shared-soul.md) | Precision language, recommendation conviction, conflict-of-interest guardrails |
+
+---
+
 ## Customizing for Your Agency
 
 This repo is built for a design and brand consultancy. But the architecture works for any service business.
@@ -273,12 +319,12 @@ This repo is built for a design and brand consultancy. But the architecture work
 
 ### Agent types you might add:
 
-- `qa-reviewer.md` — quality assurance before delivery
 - `seo-strategist.md` — search optimization
 - `analytics-analyst.md` — data and performance tracking
 - `hiring-screener.md` — if you're growing the human team
-- `client-onboarder.md` — standardize the first-week experience
 - `social-media-manager.md` — platform-specific beyond X
+- `invoice-chaser.md` — active follow-up on late payments
+- `client-success-manager.md` — ongoing account health beyond projects
 
 ---
 
@@ -296,7 +342,7 @@ A few beliefs that shaped this repo:
 
 **The org chart is a dependency graph.** "Talks To" isn't a reporting line. It's an information flow. Scout doesn't report to Muse. Scout produces research that Muse uses to make brand decisions. That's a dependency, not a hierarchy.
 
-**Start with three, not twenty-two.** The agents that change your day-to-day immediately are worth more than a complete directory you never use.
+**Start with three, not twenty-four.** The agents that change your day-to-day immediately are worth more than a complete directory you never use.
 
 ---
 

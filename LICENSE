@@ -1,0 +1,48 @@
+MIT License
+
+Copyright (c) 2026 Dragoon
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+ADDITIONAL NOTICES:
+
+This project is experimental and provided for educational and informational
+purposes only. It is not a tested, validated, or production-ready system.
+
+The author and contributors accept no responsibility for any outcomes,
+damages, losses, or liabilities arising from the use of this software,
+including but not limited to: business losses, client disputes, inaccurate
+AI outputs, legal or financial consequences, reputational harm, or any
+other direct or indirect damages.
+
+AI agent configurations can produce incorrect, misleading, or harmful
+outputs. Human oversight is required at all times. No agent configuration
+in this repository is intended to operate without human review and approval.
+
+Nothing in this repository constitutes legal, financial, business, tax,
+medical, or any other form of professional advice. Consult qualified
+professionals for professional guidance.
+
+By using this software, you acknowledge that you have read and agree to
+the terms in this LICENSE file and the DISCLAIMER.md file included in
+this repository. If you do not agree, do not use this software.
+
+USE AT YOUR OWN RISK.
